@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BonsaiMQ</id>
+    <version>1.0.0</version>
+    <title>BonsaiMQ</title>
+    <authors>Can Hicabi Tartanoglu</authors>
+    <owners>Can Hicabi Tartanoglu</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Integration of ZeroMQ/NetMQ into Bonsai</description>
+    <copyright>Can Hicabi Tartanoglu © 2019</copyright>
+    <tags>Bonsai NetMQ ZeroMQ MQ Messeging MessageQueuing tcp</tags>
+  </metadata>
+</package>
