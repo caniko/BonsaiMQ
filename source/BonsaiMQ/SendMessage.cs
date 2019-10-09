@@ -35,30 +35,3 @@ namespace Bonsai.BonsaiMQ
         }
     }
 }
-
-namespace Bonsai.BonsaiMQ
-{
-    [WorkflowElementCategory(ElementCategory.Source)]
-    [Description("Receives string from the defined ZeroMQ server, and outputs a timestamp string.")]
-
-    public class ReceiveMessage : Transform<TSource, TResult>
-    {
-        [Description("The address of the ZeroMQ client.")]
-        public string Address { get; set; }
-
-        [Description("The listening port.")]
-        public string Port { get; set; }
-
-        public override IObservable<TResult> Process(IObservable<TSource> source)
-        {
-            return source.Select(input =>
-            {
-                using (var server = new ResponseSocket(string.Format(">tcp://{0}:{1}", Address, Port)))
-                {
-                    string msg = server.ReceiveFrameString();
-                    return msg;
-                };
-            });
-        }
-    }
-}
