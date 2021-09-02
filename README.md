@@ -1,4 +1,3 @@
 # BonsaiMQ
 
-Package for allowing Bonsai to send and receive messages from other Zero/Net MQ applications.
-Install by adding nuget package to the local bonsai package directory.
+Package that provides ZeroMQ integration for [Bonsai](https://github.com/bonsai-rx/bonsai). The package is distributed as a community package in Bonsai, and should be downloaded and installed via the Bonsai package manager.
